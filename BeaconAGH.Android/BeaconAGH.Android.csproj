@@ -108,10 +108,6 @@
       <Project>{53cae935-2649-4763-9be9-58b09fa6589a}</Project>
       <Name>BeaconAGH.VM</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BeaconAGH\BeaconAGH.BL.csproj">
-      <Project>{94cff235-67a1-4eee-98f9-756aba312f8d}</Project>
-      <Name>BeaconAGH.BL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

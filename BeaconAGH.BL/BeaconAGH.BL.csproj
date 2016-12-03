@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94CFF235-67A1-4EEE-98F9-756ABA312F8D}</ProjectGuid>
+    <ProjectGuid>{440C2B09-1D7B-4E2D-8885-D3FC83B87790}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BeaconAGH</RootNamespace>
-    <AssemblyName>BeaconAGH</AssemblyName>
+    <RootNamespace>BeaconAGH.BL</RootNamespace>
+    <AssemblyName>BeaconAGH.BL</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,20 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\BeaconAGH.Adapters\BeaconAGH.Adapters.csproj">
-      <Project>{967b9767-812b-4be6-8b2f-a070ef6fc3bf}</Project>
-      <Name>BeaconAGH.Adapters</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BeaconAGH.Models\BeaconAGH.Models.csproj">
-      <Project>{7779a95e-4aa1-45bb-b6cf-d21b1bf718f8}</Project>
-      <Name>BeaconAGH.Models</Name>
-    </ProjectReference>
+    <Folder Include="LocationProcessor\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LocationProcessor\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

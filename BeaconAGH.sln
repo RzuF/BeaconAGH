@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaconAGH.BL", "BeaconAGH\BeaconAGH.BL.csproj", "{94CFF235-67A1-4EEE-98F9-756ABA312F8D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaconAGH.Models", "BeaconAGH.Models\BeaconAGH.Models.csproj", "{7779A95E-4AA1-45BB-B6CF-D21B1BF718F8}"
@@ -19,16 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaconAGH.Android", "Beacon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaconAGH.Android.Adapters", "BeaconAGH.Android.Adapters\BeaconAGH.Android.Adapters.csproj", "{2AD5E486-5AAC-4B67-8D22-F18BE5E0A600}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeaconAGH.BL", "BeaconAGH.BL\BeaconAGH.BL.csproj", "{440C2B09-1D7B-4E2D-8885-D3FC83B87790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94CFF235-67A1-4EEE-98F9-756ABA312F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94CFF235-67A1-4EEE-98F9-756ABA312F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94CFF235-67A1-4EEE-98F9-756ABA312F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94CFF235-67A1-4EEE-98F9-756ABA312F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7779A95E-4AA1-45BB-B6CF-D21B1BF718F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7779A95E-4AA1-45BB-B6CF-D21B1BF718F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7779A95E-4AA1-45BB-B6CF-D21B1BF718F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,16 +47,20 @@ Global
 		{2AD5E486-5AAC-4B67-8D22-F18BE5E0A600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD5E486-5AAC-4B67-8D22-F18BE5E0A600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD5E486-5AAC-4B67-8D22-F18BE5E0A600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440C2B09-1D7B-4E2D-8885-D3FC83B87790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440C2B09-1D7B-4E2D-8885-D3FC83B87790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440C2B09-1D7B-4E2D-8885-D3FC83B87790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440C2B09-1D7B-4E2D-8885-D3FC83B87790}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{94CFF235-67A1-4EEE-98F9-756ABA312F8D} = {9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}
 		{7779A95E-4AA1-45BB-B6CF-D21B1BF718F8} = {9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}
 		{53CAE935-2649-4763-9BE9-58B09FA6589A} = {9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}
 		{967B9767-812B-4BE6-8B2F-A070EF6FC3BF} = {9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}
 		{6C3ADB74-918C-415F-948D-9A187100C384} = {9DA6253F-B35B-49BB-91A4-D2E3964ECC07}
 		{2AD5E486-5AAC-4B67-8D22-F18BE5E0A600} = {9DA6253F-B35B-49BB-91A4-D2E3964ECC07}
+		{440C2B09-1D7B-4E2D-8885-D3FC83B87790} = {9FB8FCA3-C0BD-43EC-A9D7-3D99EC9D8E1B}
 	EndGlobalSection
 EndGlobal
