@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndroidViewModelLocator.cs" />
     <Compile Include="BeaconAGH.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -99,6 +100,10 @@
     <ProjectReference Include="..\BeaconAGH.Android.Adapters\BeaconAGH.Android.Adapters.csproj">
       <Project>{2ad5e486-5aac-4b67-8d22-f18be5e0a600}</Project>
       <Name>BeaconAGH.Android.Adapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeaconAGH.BL\BeaconAGH.BL.csproj">
+      <Project>{440c2b09-1d7b-4e2d-8885-d3fc83b87790}</Project>
+      <Name>BeaconAGH.BL</Name>
     </ProjectReference>
     <ProjectReference Include="..\BeaconAGH.Models\BeaconAGH.Models.csproj">
       <Project>{7779a95e-4aa1-45bb-b6cf-d21b1bf718f8}</Project>

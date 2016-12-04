@@ -26,6 +26,8 @@ namespace BeaconAGH.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::BeaconAGH.Android.Adapters.Resource.String.ApplicationName = global::BeaconAGH.Android.Resource.String.ApplicationName;
+			global::BeaconAGH.Android.Adapters.Resource.String.Hello = global::BeaconAGH.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
