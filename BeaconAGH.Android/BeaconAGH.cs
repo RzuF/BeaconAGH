@@ -14,6 +14,8 @@ namespace BeaconAGH.Android
         public override void OnCreate()
         {
             base.OnCreate();
+
+            AndroidViewModelLocator.RegisterDependencies();
         }
 
         public override void OnTerminate()
