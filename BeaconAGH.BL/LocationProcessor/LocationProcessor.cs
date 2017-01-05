@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 using BeaconAGH.Models;
 
 namespace BeaconAGH.BL.LocationProcessor
@@ -24,7 +29,7 @@ namespace BeaconAGH.BL.LocationProcessor
 
         #endregion
 
-        public void GetLocatonData(ResponseLocation response)
+        public async Task GetLocatonData(ResponseLocation response)
         {
             OnLocationParametersChanged?.Invoke(this, new LocationParameters()
             {

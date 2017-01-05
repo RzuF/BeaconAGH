@@ -4,6 +4,7 @@ using BeaconAGH.Adapters;
 using BeaconAGH.Models;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using BeaconAGH.BL.LocationProcessor;
 
 namespace BeaconAGH.VM
