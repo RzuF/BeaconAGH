@@ -18,10 +18,8 @@ namespace BeaconAGH.Android
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var x = ViewModelLocator.Main.Id;
-
             _bindings.Add(this.SetBinding(() => ViewModelLocator.Main.Id, () => IdEditText.Text).ConvertSourceToTarget(Converters.IntToString));
-            _bindings.Add(this.SetBinding(() => ViewModelLocator.Main.Delay, () => DelayEditText.Text).ConvertSourceToTarget(Converters.IntToString));
+            _bindings.Add(this.SetBinding(() => ViewModelLocator.Main.Delay, () => DelayEditText.Text).ConvertSourceToTarget(Converters.NullableIntToString));
             _bindings.Add(this.SetBinding(() => ViewModelLocator.Main.Range, () => RangeEditText.Text).ConvertSourceToTarget(Converters.IntToString));
             _bindings.Add(this.SetBinding(() => ViewModelLocator.Main.Timestamp, () => TimestampEditText.Text).ConvertSourceToTarget(Converters.DateTimeToString));
 

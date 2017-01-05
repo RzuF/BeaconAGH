@@ -4,7 +4,6 @@ using BeaconAGH.Adapters;
 using BeaconAGH.Models;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using GalaSoft.MvvmLight.Messaging;
 using BeaconAGH.BL.LocationProcessor;
 
 namespace BeaconAGH.VM
@@ -21,15 +20,14 @@ namespace BeaconAGH.VM
             _locationProvider = locationProvider;
 
             LocationProcessor.Instance.OnLocationParametersChanged += InstanceOnOnLocationParametersChanged;
-
-            Id = 0;
         }
 
         private void InstanceOnOnLocationParametersChanged(object sender, LocationParameters locationParameters)
         {
-            var rand = new Random();
-
-            Id = rand.Next(100);
+            Id = locationParameters.Id;
+            Range = locationParameters.Range;
+            Timestamp = locationParameters.Timestamp;
+            Delay = locationParameters.Delay;
         }
 
         #region Proporties
@@ -70,9 +68,9 @@ namespace BeaconAGH.VM
             }
         }
 
-        private int _delay;
+        private int? _delay;
 
-        public int Delay
+        public int? Delay
         {
             get { return _delay; }
             set
@@ -104,14 +102,14 @@ namespace BeaconAGH.VM
 
         private async void RequestDataTimestampMethod()
         {
-            var response = _locationProvider.RequestLocationData(new RequestLocation());
+            var response = await _locationProvider.RequestLocationData(new RequestLocation() {RequestDateTime = DateTime.Now});
 
             await LocationProcessor.Instance.GetLocatonData(response);
         }
 
         private async void RequestDataNoTimestampMethod()
         {
-            var response = _locationProvider.RequestLocationData(null);
+            var response = await _locationProvider.RequestLocationData(null);
 
             await LocationProcessor.Instance.GetLocatonData(response);
         }
