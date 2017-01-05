@@ -68,6 +68,10 @@
     <Compile Include="AndroidViewModelLocator.cs" />
     <Compile Include="BeaconAGH.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainActivity.cs.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>MainActivity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />

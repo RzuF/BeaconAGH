@@ -4,7 +4,7 @@ using Android.OS;
 namespace BeaconAGH.Android
 {
     [Activity(Label = "BeaconAGH.Android", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public partial class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {

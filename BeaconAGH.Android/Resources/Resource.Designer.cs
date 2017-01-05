@@ -62,8 +62,23 @@ namespace BeaconAGH.Android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050003
+			public const int delayEditText = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int getDataOneButton = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int getDataTwoButton = 2131034117;
+			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int idEditText = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int rangeEditText = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int timestampEditText = 2131034114;
 			
 			static Id()
 			{
