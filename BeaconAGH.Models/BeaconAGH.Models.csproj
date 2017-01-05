@@ -38,6 +38,7 @@
     <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocationParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestLocation.cs" />
     <Compile Include="ResponseLocation.cs" />

@@ -1,5 +1,6 @@
 using BeaconAGH.Adapters;
 using BeaconAGH.Android.Adapters;
+using BeaconAGH.VM;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 

@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="AndroidViewModelLocator.cs" />
     <Compile Include="BeaconAGH.cs" />
+    <Compile Include="Converters.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainActivity.cs.cs">
       <SubType>Code</SubType>

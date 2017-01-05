@@ -8,7 +8,7 @@ namespace BeaconAGH.Android.Adapters
     {
         public ResponseLocation RequestLocationData(RequestLocation requestLocation)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

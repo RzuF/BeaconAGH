@@ -1,6 +1,7 @@
 using System;
 using Android.App;
 using Android.Runtime;
+using BeaconAGH.VM;
 
 namespace BeaconAGH.Android
 {
@@ -16,6 +17,8 @@ namespace BeaconAGH.Android
             base.OnCreate();
 
             AndroidViewModelLocator.RegisterDependencies();
+
+            new ViewModelLocator();
         }
 
         public override void OnTerminate()
